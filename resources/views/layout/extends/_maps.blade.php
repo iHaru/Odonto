@@ -1,6 +1,6 @@
 <div class="row justify-content-start">
     <div class="col-7">
-        <h4>Faça uma visita</h4>
+        <h4 class="text-uppercase">Faça uma <b>visita</b></h4>
     </div>
     <hr width="60%" style="margin-left: 0px; border-color:orange; margin:0 0 0 10px" class="entrecontato">
 </div>

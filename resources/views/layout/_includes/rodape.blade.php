@@ -3,7 +3,8 @@
             <div class="container-fluid" style="background-color: black;">
                 <div class="row">
                     <div class="col-md-4">
-                        <h4 style="color: white">Horários</h4>
+                        <br>
+                        <h4 style="color: white" class="text-uppercase">Horários</h4>
 
                         <table class="table" style="color: white">
                           <tbody>
@@ -48,7 +49,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h4 style="color: white">Teste</h4>
+                        <h4 style="color: white" class="text-uppercase">Teste</h4>
                         <p style="color: white">Suspendisse potenti. Maecenas porta scelerisque est non auctor. Aliquam erat volutpat.
                             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                             Sed ullamcorper magna quam, a eleifend ex venenatis id.
@@ -63,7 +64,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h4 style="color: white">Contato</h4>
+                        <h4 style="color: white" class="text-uppercase">Contato</h4>
                         <p style="color: white">Venha conhecer o nosso trabalho e realize uma avaliação do seu sorriso!</p>
 
                         <div align="center">

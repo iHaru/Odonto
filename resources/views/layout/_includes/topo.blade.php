@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>@yield('titulo')</title>
@@ -14,6 +14,34 @@
 
         <!-- Styles -->
         <style>
+            body {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bce0ee+0,b4e8de+12,f7f7f7+48,b4e8de+88,b3dced+100 */
+                background: #bce0ee; /* Old browsers */
+                background: -moz-linear-gradient(top,  #bce0ee 0%, #b4e8de 12%, #f7f7f7 48%, #b4e8de 88%, #b3dced 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  #bce0ee 0%,#b4e8de 12%,#f7f7f7 48%,#b4e8de 88%,#b3dced 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  #bce0ee 0%,#b4e8de 12%,#f7f7f7 48%,#b4e8de 88%,#b3dced 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bce0ee', endColorstr='#b3dced',GradientType=0 );
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"* IE6-9 */
+            }
+
+            .navlight {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b1d8f5+0,e3f2fd+47,b1d8f5+97 */
+                background: #b3dced; /* Old browsers */
+                background: -moz-linear-gradient(top,  #b3dced 20%, #b4e8de 34%, #b4e8de 68%, #bce0ee 82%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  #b3dced 20%,#b4e8de 34%,#b4e8de 68%,#bce0ee 82%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  #b3dced 20%,#b4e8de 34%,#b4e8de 68%,#bce0ee 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+            }
+
+            .input-group-text {
+                background-color: unset;
+                border: none;
+            }
+
+            .radius {
+                border-radius: .25rem !important;
+            }
+
             .fa {
                 margin: 2px;
                 width: 30px;
@@ -87,7 +115,7 @@
     </head>
     <body>
         <header>
-            <div class="container-fluid" style="background-color:aliceblue">
+            <div class="container-fluid">
                 <div id="carouselHeader" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -99,7 +127,7 @@
                                 <p style="margin-bottom: 0">
                                     <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
                                 </p>
-                                <button type="button" class="btn btn-info" style="margin: 5px">Agende um horário</button>
+                                <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -111,7 +139,7 @@
                                 <p style="margin-bottom: 0">
                                     <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
                                 </p>
-                                <button type="button" class="btn btn-info" style="margin: 5px">Agende um horário</button>
+                                <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -123,7 +151,7 @@
                                 <p style="margin-bottom: 0">
                                     <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
                                 </p>
-                                <button type="button" class="btn btn-info" style="margin: 5px">Agende um horário</button>
+                                <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
                             </div>
                         </div>
 
@@ -168,8 +196,8 @@
             </div> --}}
             <hr style="border:2px solid orange; margin:0px">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Menu</a>
+            <nav class="navbar navbar-expand-lg navbar-light navlight">
+                <a class="navbar-brand d-block d-sm-none" href="/">MENU</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -177,30 +205,44 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Equipe</a>
+                            <a class="nav-link" href="#">EQUIPE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
-                            <ol style="list-style-type:disc">
+
+                            <!-- MOBILE DEVICE -->
+
+                            <a class="nav-link d-block d-sm-none" href="/servicos">SERVIÇOS</a>
+                            <ol style="list-style-type:disc" class="d-block d-sm-none">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Limpeza</a>
+                                    <a class="nav-link" href="/servicos">LIMPEZA</a>
                                 </li>
                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Restauração</a>
+                                    <a class="nav-link" href="/servicos">RESTAURAÇÃO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Cirurgia</a>
+                                    <a class="nav-link" href="/servicos">CIRURGIA</a>
                                 </li>
                             </ol>
+
+                            <!-- DESKTOP -->
+
+                            <a class="nav-link dropdown-toggle d-none d-sm-block" href="" id="dropdownServicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SERVIÇOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownServicos" style="left: auto">
+                                <a class="dropdown-item" href="#">LIMPEZA</a>
+                                <a class="dropdown-item" href="#">RESTAURAÇÃO</a>
+                                <a class="dropdown-item" href="#">CIRURGIA</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galeria</a>
+                            <a class="nav-link" href="#">GALERIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="/contato">CONTATO</a>
                         </li>
                     </ul>
                 </div>
@@ -208,3 +250,4 @@
 
         </header>
 
+        <br>
