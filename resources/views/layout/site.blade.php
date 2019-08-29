@@ -1,3 +1,4 @@
 @include('layout._includes.topo')
-@yield('conteudo')
+<div class="loader"></div>
+<div class="loaded">@yield('conteudo')</div>
 @include('layout._includes.rodape')

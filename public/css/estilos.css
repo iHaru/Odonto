@@ -1,0 +1,102 @@
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bce0ee+0,b4e8de+12,f7f7f7+48,b4e8de+88,b3dced+100 */
+    background: #bce0ee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #bce0ee 0%, #b4e8de 12%, #f7f7f7 48%, #b4e8de 88%, #b3dced 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #bce0ee 0%,#b4e8de 12%,#f7f7f7 48%,#b4e8de 88%,#b3dced 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #bce0ee 0%,#b4e8de 12%,#f7f7f7 48%,#b4e8de 88%,#b3dced 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bce0ee', endColorstr='#b3dced',GradientType=0 );
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" /* IE6-9 */
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/loader.gif') 50% 50% no-repeat white;
+}
+
+.navlight {
+    background-color: rgba(0, 240, 255, 1);
+}
+
+.input-group-text {
+    background-color: unset;
+    border: none;
+}
+
+.radius {
+    border-radius: .25rem !important;
+}
+
+/*CAROUSEL HOME*/
+
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.img01 {
+    background-color: rgba(66, 211, 195, 0.3);
+    top: 0;
+    color: black;
+    bottom: unset;
+    border-radius: 15%;
+}
+
+.img02 {
+    background-color: rgba(66, 211, 195, 0.3);
+    right: 0;
+    bottom: 0;
+    color: black;
+    left: unset;
+}
+
+/*ICONS*/
+
+.fa {
+    margin: 2px;
+    width: 30px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
+}
+
+.icon-form {
+    margin: 0;
+}

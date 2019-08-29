@@ -2,8 +2,8 @@
 
 @section('titulo', 'Odonto')
 @section('conteudo')
-    <div class="row justify-content-start">
-        <div class="container">
+    <div class="container">
+        <div class="row justify-content-start">
             <div class="col-md-6">
                 @include('layout.extends._form')
             </div>
@@ -12,4 +12,5 @@
             </div>
         </div>
     </div>
+    <br>
 @endsection

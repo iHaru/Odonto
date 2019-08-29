@@ -3,6 +3,62 @@
 @section('titulo', 'Odonto')
 @section('conteudo')
     <div class="container">
+
+        <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="{!! asset('img/img_01.jpeg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                    <div class="carousel-content img01" style="background-color: rgba(66, 211, 195, 0.3);">
+                        <p style="margin-bottom: 0">
+                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 3915-3124</span>
+                        </p>
+                        <p style="margin-bottom: 0">
+                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
+                        </p>
+                        <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="{!! asset('img/img_02.jpeg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                    <div class="carousel-content img02" style="background-color: rgba(66, 211, 195, 0.3);">
+                        <p style="margin-bottom: 0">
+                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 3915-3124</span>
+                        </p>
+                        <p style="margin-bottom: 0">
+                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
+                        </p>
+                        <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="{!! asset('img/img_03.jpg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                    <div class="carousel-content img03" style="background-color: rgba(66, 211, 195, 0.3);">
+                        <p style="margin-bottom: 0">
+                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 3915-3124</span>
+                        </p>
+                        <p style="margin-bottom: 0">
+                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
+                        </p>
+                        <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <br><br>
+
         <div class="card bg-info">
             <div class="card-header text-uppercase text-white"><h4><b>Equipe</b></h4></div>
             <div class="card-body">
@@ -15,6 +71,8 @@
                             </p>
                         </div>
                     </div>
+                    <div class="w-100 d-none d-md-block d-lg-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
+                    <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
                     <div class="card">
                         <img src="{!! asset('img/img_02.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -23,6 +81,7 @@
                             </p>
                         </div>
                     </div>
+                    <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
                     <div class="card">
                         <img src="{!! asset('img/img_03.jpg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -50,12 +109,14 @@
                             <h5 class="card-title">Limpeza</h5>
                         </div>
                     </div>
+                    <div class="w-100 d-none d-sm-block d-md-block d-lg-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
                     <div class="card">
                         <img src="{!! asset('img/img_02.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Restauração</h5>
                         </div>
                     </div>
+                    <div class="w-100 d-none d-sm-block d-md-block d-lg-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
                     <div class="card">
                         <img src="{!! asset('img/img_03.jpg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -95,12 +156,16 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <br>
+        <div class="row justify-content-center">
+            <button type="button" class="btn btn-primary">Ver todas as fotos</button>
+        </div>
 
         <br>
     </div>
 
-    <div class="row justify-content-start">
-        <div class="container">
+    <div class="container">
+        <div class="row justify-content-start">
             <div class="col-md-6">
                 @include('layout.extends._form')
             </div>
@@ -109,4 +174,5 @@
             </div>
         </div>
     </div>
+    <br>
 @endsection

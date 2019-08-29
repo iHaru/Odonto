@@ -16,12 +16,18 @@
                             <h5 class="card-title">Limpeza</h5>
                         </div>
                     </div>
+
+                    <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
+
                     <div class="card">
                         <img src="{!! asset('img/img_02.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Restauração</h5>
                         </div>
                     </div>
+
+                    <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
+
                     <div class="card">
                         <img src="{!! asset('img/img_03.jpg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -29,7 +35,7 @@
                         </div>
                     </div>
 
-                    <div class="w-100 d-none d-xl-block d-lg-block d-md-block" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
+                    <div class="w-100 d-none d-sm-block d-xl-block d-lg-block d-md-block" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
 
                     <div class="card">
                         <img src="{!! asset('img/img_01.jpeg') !!}" class="card-img-top" alt="...">
@@ -37,12 +43,18 @@
                             <h5 class="card-title">Limpeza</h5>
                         </div>
                     </div>
+
+                    <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
+
                     <div class="card">
                         <img src="{!! asset('img/img_02.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Restauração</h5>
                         </div>
                     </div>
+
+                    <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
+
                     <div class="card">
                         <img src="{!! asset('img/img_03.jpg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -57,4 +69,5 @@
             </div>
         </div>
     </div>
+    <br>
 @endsection

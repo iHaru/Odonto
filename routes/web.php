@@ -23,3 +23,10 @@ Route::get('/servicos', function () {
     return view('servicos');
 });
 
+Route::get('/clinica', function () {
+    return view('clinica');
+});
+
+Route::get('/galeria', function () {
+    return view('galeria');
+});
