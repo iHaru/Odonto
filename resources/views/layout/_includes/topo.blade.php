@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>@yield('titulo')</title>
@@ -17,38 +17,6 @@
     </head>
     <body>
         <header>
-            <div class="container-fluid">
-            </div>
-
-                {{-- <div class="container" style="width:80%">
-                    <div class="container" style="height:200px; width:80%; padding:5px" align="center">
-                        <img src="{!! asset('img/header.jpeg') !!}" alt="Logo dentista" width="200px">
-                        <button type="button" class="btn btn-info" style="margin: 5px">Agende um horário</button>
-                    </div>
-
-                    <div align="center">
-                        <p>
-                            <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 3915-3124</span>
-                        </p>
-                    </div>
-
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a href="" class="nav-link fa fa-facebook"></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link fa fa-twitter"></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link fa fa-instagram"></a>
-                        </li>
-                    </ul>
-                    <br>
-                </div>
-                </div> --}}
-
             <nav class="navbar navbar-expand-lg navbar-light navlight">
                 <a class="navbar-brand" href="/">
                     <img src="{!! asset('img/logo.png') !!}" width="180" height="60" class="d-inline-block align-top" alt="">

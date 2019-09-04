@@ -16,7 +16,9 @@
                         <p style="margin-bottom: 0">
                             <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
                         </p>
-                        <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                        <a href="/contato">
+                            <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                        </a>
                     </div>
                 </div>
 
@@ -29,7 +31,9 @@
                         <p style="margin-bottom: 0">
                             <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
                         </p>
-                        <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                        <a href="/contato">
+                            <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                        </a>
                     </div>
                 </div>
 
@@ -42,7 +46,9 @@
                         <p style="margin-bottom: 0">
                             <i class="fa fa-phone"></i><span style="font-size: 20px">(11) 97588-0526</span>
                         </p>
-                        <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                        <a href="/contato">
+                            <button type="button" class="btn btn-info" style="margin: 5px">AGENDE UM HORÁRIO</button>
+                        </a>
                     </div>
                 </div>
 
@@ -126,7 +132,7 @@
                 </div>
                 <br>
                 <div class="row justify-content-center">
-                    <a href=""><button type="button" class="btn btn-primary">Ver mais...</button></a>
+                    <a href="/servicos"><button type="button" class="btn btn-primary">Ver mais...</button></a>
                 </div>
             </div>
         </div>
@@ -158,7 +164,9 @@
         </div>
         <br>
         <div class="row justify-content-center">
-            <button type="button" class="btn btn-primary">Ver todas as fotos</button>
+            <a href="/galeria">
+                <button type="button" class="btn btn-primary">Ver todas as fotos</button>
+            </a>
         </div>
 
         <br>

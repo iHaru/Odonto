@@ -30,3 +30,6 @@ Route::get('/clinica', function () {
 Route::get('/galeria', function () {
     return view('galeria');
 });
+
+Route::post('/enviaremail', ['as' => 'enviaremail', 'uses' => 'Email\email@enviar']);
+Route::get('/emailenviado', ['as' => 'emailenviado', 'uses' => 'Email\email@enviado']);

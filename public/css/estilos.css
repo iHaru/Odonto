@@ -84,6 +84,10 @@ body {
     color: white;
 }
 
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color: white;
+}
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
