@@ -97,6 +97,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <a href="/clinica">
+                        <button type="button" class="btn btn-primary" style="margin: 5px">Conheça nossa clínica</button>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -132,7 +137,7 @@
                 </div>
                 <br>
                 <div class="row justify-content-center">
-                    <a href="/servicos"><button type="button" class="btn btn-primary">Ver mais...</button></a>
+                    <a href="/servicos"><button type="button" class="btn btn-primary">Conheça nossos serviços</button></a>
                 </div>
             </div>
         </div>

@@ -11,10 +11,9 @@ class email extends Controller
     public function enviar(Request $req) {
         $dados = $req -> all();
 
-        Mail::send('emailenviado', $dados, function ($message) use ($dados) {
-            $message->from($dados['email'])
-            -> to('matheus.m_c@hotmail.com')
-            -> subject('Telefone: ' . $dados['telefone'] . ' Mensagem:' . $dados['mensagem']);
+        Mail::send('emailenviar', $dados, function ($message) use ($dados) {
+            $message -> to('ninjaakats@gmail.com')
+            -> subject($dados['nome'] . ' entrou em contato com você através do site');
         });
 
         return redirect() -> route('emailenviado');

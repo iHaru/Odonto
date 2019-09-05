@@ -16,9 +16,9 @@
 
     </head>
     <body>
-        <header>
+        <header class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light navlight">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/" style="display: ''">
                     <img src="{!! asset('img/logo.png') !!}" width="180" height="60" class="d-inline-block align-top" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +68,22 @@
                             <a class="nav-link" href="/contato">CONTATO</a>
                         </li>
                     </ul>
+
+                    <div style="float:right">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a href="" class="nav-link fa fa-facebook"></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link fa fa-twitter"></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link fa fa-instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <hr style="border:2px solid orange; margin:0px">

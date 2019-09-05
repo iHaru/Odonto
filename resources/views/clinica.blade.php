@@ -7,13 +7,13 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="{!! asset('img/img_01_2.jpeg') !!}" width="100%" alt="" style="margin: 5px">
-                        <img src="{!! asset('img/img_03_2.jpg') !!}" width="100%" alt="" style="margin: 5px">
+                        <img src="{!! asset('img/img_01_2.jpeg') !!}" width="100%" alt="" style="margin: 5px" class="img-fluid img-thumbnail">
+                        <img src="{!! asset('img/img_03_2.jpg') !!}" width="100%" alt="" style="margin: 5px" class="img-fluid img-thumbnail">
 
                     </div>
                     <div class="col-sm-6">
-                        <img src="{!! asset('img/img_02_2.jpeg') !!}" width="100%" alt="" style="margin: 5px">
-                        <img src="{!! asset('img/header_2.jpeg') !!}" width="100%" alt="" style="margin: 5px">
+                        <img src="{!! asset('img/img_02_2.jpeg') !!}" width="100%" alt="" style="margin: 5px" class="img-fluid img-thumbnail">
+                        <img src="{!! asset('img/header_2.jpeg') !!}" width="100%" alt="" style="margin: 5px" class="img-fluid img-thumbnail">
                     </div>
                 </div>
             </div>
