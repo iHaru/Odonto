@@ -128,15 +128,16 @@
                 var navbar = $('.navbar');
 
                 $(window).scroll(function () {
-                    if ($(document).scrollTop() != 0) {
-                        TweenMax.to(navbrand, 1, {visibility: "hidden"});
-                        TweenMax.to(navbar, 1, {height: "40px"});
-                    } else {
-                        TweenMax.to(navbrand, 1, {visibility: ""});
-                        TweenMax.to(navbar, 1, {height: "70px"});
+                    if ($('.navbar').width() >= 768) {
+                        if ($(document).scrollTop() != 0) {
+                            TweenMax.to(navbrand, 0.3, {autoAlpha: 0});
+                            TweenMax.to(navbar, 0.6, {height: "50px"});
+                        } else {
+                            TweenMax.to(navbrand, 0.6, {autoAlpha: 1});
+                            TweenMax.to(navbar, 0.3, {height: "70px"});
+                        }
                     }
-                })
-
+                });
             });
         </script>
     </body>

@@ -16,78 +16,68 @@
 
     </head>
     <body>
-        <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-light navlight">
-                <a class="navbar-brand" href="/" style="display: ''">
-                    <img src="{!! asset('img/logo.png') !!}" width="180" height="60" class="d-inline-block align-top" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light navlight">
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <!--DESKTOP-->
+                <div class="d-none d-md-block">
+                    <a class="navbar-brand" href="/">
+                        <img src="{!! asset('img/logo.png') !!}" width="180" height="60" class="align-top" alt="">
+                    </a>
+                </div>
+                <!--MOBILE-->
+                <div class="d-block d-sm-block d-md-none">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img id="logoMobile" src="{!! asset('img/logo.png') !!}" style="margin-left: 30px" width="180" height="50" class="align-top" alt="">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navtoggle">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::path() == '/' ? 'activeLink' : '' }}">
                             <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::path() == 'clinica' ? 'activeLink' : '' }}">
                             <a class="nav-link" href="/clinica">CLÍNICA</a>
                         </li>
-                        <li class="nav-item">
-
-                            <!-- MOBILE DEVICE -->
-
-                            <a class="nav-link d-block d-sm-none" href="/servicos">SERVIÇOS</a>
-                            <ol style="list-style-type:disc" class="d-block d-sm-none">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/servicos">LIMPEZA</a>
-                                </li>
-                               <li class="nav-item">
-                                    <a class="nav-link" href="/servicos">RESTAURAÇÃO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/servicos">CIRURGIA</a>
-                                </li>
-                            </ol>
-
-                            <!-- DESKTOP -->
-
-                            <a class="nav-link dropdown-toggle d-none d-sm-block" href="" id="dropdownServicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SERVIÇOS
+                        <li class="nav-item {{ Request::path() == 'servicos' ? 'activeLink' : '' }}">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdownMobile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                SERVIÇOS
                             </a>
-                            <div class="dropdown-menu navlight" aria-labelledby="dropdownServicos" style="left: auto">
+                            <div class="dropdown-menu navlight" aria-labelledby="dropdownMobile" style="left: auto; top: auto; border: none" id="ddMobile">
                                 <a class="dropdown-item" href="/servicos">LIMPEZA</a>
                                 <a class="dropdown-item" href="/servicos">RESTAURAÇÃO</a>
                                 <a class="dropdown-item" href="/servicos">CIRURGIA</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::path() == 'galeria' ? 'activeLink' : '' }}">
                             <a class="nav-link" href="/galeria">GALERIA</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::path() == 'contato' ? 'activeLink' : '' }}">
                             <a class="nav-link" href="/contato">CONTATO</a>
                         </li>
                     </ul>
+                </div>
+                <div class="iconsNavMobile">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="" class="nav-link fa fa-facebook"></a>
+                        </li>
 
-                    <div style="float:right">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a href="" class="nav-link fa fa-facebook"></a>
-                            </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link fa fa-twitter"></a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a href="" class="nav-link fa fa-twitter"></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="" class="nav-link fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li class="nav-item">
+                            <a href="" class="nav-link fa fa-instagram"></a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
             <hr style="border:2px solid orange; margin:0px">
-
 
         </header>
 

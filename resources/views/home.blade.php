@@ -97,6 +97,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row justify-content-center">
                     <a href="/clinica">
                         <button type="button" class="btn btn-primary" style="margin: 5px">Conheça nossa clínica</button>

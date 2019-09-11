@@ -10,13 +10,13 @@
             <div class="input-group-prepend">
                 <span class="input-group-text fa fa-user icon-form" id="basic-addon1"></span>
             </div>
-            <input name="nome" type="text" class="form-control radius" placeholder="Seu nome" aria-label="Username" aria-describedby="basic-addon1">
+            <input name="nome" type="text" class="form-control radius" placeholder="Seu nome (obrigatório)" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text fa fa-envelope icon-form" id="basic-addon1"></span>
             </div>
-            <input name="email" type="email" class="form-control radius" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1">
+            <input name="email" type="email" class="form-control radius" placeholder="E-mail (obrigatório)" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -28,7 +28,7 @@
             <div class="input-group-prepend" style="text-align: center">
                 <span class="input-group-text fa fa-comment icon-form" style="display: inline-flex"></span>
             </div>
-            <textarea name="mensagem" class="form-control radius" aria-label="With textarea" placeholder="Sua mensagem"></textarea>
+            <textarea name="mensagem" class="form-control radius" aria-label="With textarea" placeholder="Sua mensagem (obrigatório)" required></textarea>
         </div>
     </div>
 
