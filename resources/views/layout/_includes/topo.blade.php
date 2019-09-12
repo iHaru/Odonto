@@ -25,6 +25,7 @@
                         <img src="{!! asset('img/logo.png') !!}" width="180" height="60" class="align-top" alt="">
                     </a>
                 </div>
+
                 <!--MOBILE-->
                 <div class="d-block d-sm-block d-md-none">
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">

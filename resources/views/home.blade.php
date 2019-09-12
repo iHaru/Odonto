@@ -69,7 +69,7 @@
             <div class="card-header text-uppercase text-white"><h4><b>Equipe</b></h4></div>
             <div class="card-body">
                 <div class="card-deck">
-                    <div class="card">
+                    <div class="card equipe">
                         <img src="{!! asset('img/img_01.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="w-100 d-none d-md-block d-lg-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
                     <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
-                    <div class="card">
+                    <div class="card equipe">
                         <img src="{!! asset('img/img_02.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
-                    <div class="card">
+                    <div class="card equipe">
                         <img src="{!! asset('img/img_03.jpg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -145,40 +145,41 @@
 
         <br>
 
-        <h4 class="text-uppercase"><b>Galeria</b></h4>
-
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{!! asset('img/img_01.jpeg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+        <div class="card bg-info">
+            <div class="card-header text-uppercase text-white"><h4><b>Galeria</b></h4></div>
+            <div class="card-body">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{!! asset('img/img_01.jpeg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{!! asset('img/img_02.jpeg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{!! asset('img/img_03.jpg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="carousel-item">
-                    <img src="{!! asset('img/img_02.jpeg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="{!! asset('img/img_03.jpg') !!}" class="d-block w-100 img-fluid item img-thumbnail" alt="...">
+                <br>
+                <div class="row justify-content-center">
+                    <a href="/galeria">
+                        <button type="button" class="btn btn-primary">Ver todas as fotos</button>
+                    </a>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <br>
-        <div class="row justify-content-center">
-            <a href="/galeria">
-                <button type="button" class="btn btn-primary">Ver todas as fotos</button>
-            </a>
         </div>
 
         <br>
-    </div>
 
-    <div class="container">
         <div class="row justify-content-start">
             <div class="col-md-6">
                 @include('layout.extends._form')

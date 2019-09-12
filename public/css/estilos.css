@@ -1,3 +1,5 @@
+/*GLOBAL*/
+
 body {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bce0ee+0,b4e8de+12,f7f7f7+48,b4e8de+88,b3dced+100 */
     background: #bce0ee; /* Old browsers */
@@ -9,24 +11,20 @@ body {
     padding-top: 80px;
 }
 
-@media (max-width: 386px){
-    body {
+    @media (max-width: 386px){
+        body {
         padding-top: 110px;
+        }
     }
-}
 
 .loader {
     position: fixed;
-    left: 0px;
-    top: 0px;
     width: 100%;
     height: 100%;
+    left: 0px;
+    top: 0px;
     z-index: 9999;
     background: url('../img/loader.gif') 50% 50% no-repeat white;
-}
-
-.navlight {
-    background-color: rgba(0, 240, 255, 1);
 }
 
 .input-group-text {
@@ -34,23 +32,71 @@ body {
     border: none;
 }
 
+
 .radius {
     border-radius: .25rem !important;
 }
 
-@media (max-width: 769px) {
-    .iconsNavMobile {
-        position: absolute;
-        right: 0;
-        margin-right: 15px;
-        top: 0;
-        margin-top: 20px;
-    }
+/*NAVBAR*/
+
+.navlight {
+    background-color: rgba(0, 240, 255, 1);
 }
+
+@media (min-width: 768px) {
+    .nav-item {
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+
+        .nav-item:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform-duration: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+            z-index: 50;
+        }
+    }
 
 .activeLink {
     border-bottom: 2px solid black;
 }
+
+/*CORPO*/
+@media (min-width: 768px) {
+    .equipe {
+        transition-duration: 0.5s;
+    }
+        .equipe:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform-duration: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+            z-index: 50;
+        }
+    }
+
+@media (min-width: 768px) {
+    .d-none > a > img {
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+
+        .d-none > a > img:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform-duration: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+    }
 
 /*CAROUSEL HOME*/
 
@@ -128,4 +174,14 @@ body {
 
 .icon-form {
     margin: 0;
+}
+
+@media (max-width: 769px) {
+    .iconsNavMobile {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+        top: 0;
+        margin-top: 20px;
+    }
 }

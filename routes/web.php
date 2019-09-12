@@ -11,25 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/contato', function () {
-    return view('contato');
-});
-
-Route::get('/servicos', function () {
-    return view('servicos');
-});
-
-Route::get('/clinica', function () {
-    return view('clinica');
-});
-
-Route::get('/galeria', function () {
-    return view('galeria');
-});
+Route::get('/', ['as' => 'home', 'uses' => 'Site@home']);
+Route::get('/contato', ['as' => 'contato', 'uses' => 'Site@contato']);
+Route::get('/servicos', ['as' => 'servicos', 'uses' => 'Site@servicos']);
+Route::get('/clinica', ['as' => 'clinica', 'uses' => 'Site@clinica']);
+Route::get('/galeria', ['as' => 'galeria', 'uses' => 'Site@galeria']);
 
 Route::post('/enviaremail', ['as' => 'enviaremail', 'uses' => 'Email\email@enviar']);
 Route::get('/emailenviado', ['as' => 'emailenviado', 'uses' => 'Email\email@enviado']);
