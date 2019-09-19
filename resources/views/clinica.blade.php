@@ -30,7 +30,7 @@
             <div class="card-header text-uppercase text-white"><h4><b>Equipe</b></h4></div>
             <div class="card-body">
                 <div class="card-deck">
-                    <div class="card">
+                    <div class="card equipe">
                         <img src="{!! asset('img/img_01.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="w-100 d-none d-md-block d-lg-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
                     <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
-                    <div class="card">
+                    <div class="card equipe">
                         <img src="{!! asset('img/img_02.jpeg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="w-100 d-none d-sm-block d-md-none" style="margin-top: 5px; margin-bottom: 5px;"><!-- wrap every 5 on xl--></div>
-                    <div class="card">
+                    <div class="card equipe">
                         <img src="{!! asset('img/img_03.jpg') !!}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>

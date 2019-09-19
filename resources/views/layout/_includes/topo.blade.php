@@ -45,14 +45,7 @@
                             <a class="nav-link" href="/clinica">CLÍNICA</a>
                         </li>
                         <li class="nav-item {{ Request::path() == 'servicos' ? 'activeLink' : '' }}">
-                            <a class="nav-link dropdown-toggle" href="" id="dropdownMobile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                SERVIÇOS
-                            </a>
-                            <div class="dropdown-menu navlight" aria-labelledby="dropdownMobile" style="left: auto; top: auto; border: none" id="ddMobile">
-                                <a class="dropdown-item" href="/servicos">LIMPEZA</a>
-                                <a class="dropdown-item" href="/servicos">RESTAURAÇÃO</a>
-                                <a class="dropdown-item" href="/servicos">CIRURGIA</a>
-                            </div>
+                            <a class="nav-link" href="/servicos">SERVIÇOS</a>
                         </li>
                         <li class="nav-item {{ Request::path() == 'galeria' ? 'activeLink' : '' }}">
                             <a class="nav-link" href="/galeria">GALERIA</a>
